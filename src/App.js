@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState}from 'react'
+import Books from './Components/Books';
+import Home from './Components/Home';
 
 function App() {
+  const [active, setActive] = useState([]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <nav className='navbtn'>
+        <button onClick={()=> setActive("Home")}>Home</button>
+        <button onClick={()=> setActive("Books")}>Books</button>
+      </nav>
+      <div>
+        {active === "Home" && <Home title="" />}
+        {active === "Books" && <Books title="" />}
+      </div>
     </div>
-  );
+   
+  )
 }
 
-export default App;
+export default App
