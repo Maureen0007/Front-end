@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/http//Maureen0007.github.io/Front-end/static/css/main.fa77c872.css",
+    "main.js": "/http//Maureen0007.github.io/Front-end/static/js/main.03246e1f.js",
+    "static/media/Homeimg.jpg": "/http//Maureen0007.github.io/Front-end/static/media/Homeimg.2f57aebc674e9f89a5b5.jpg",
+    "index.html": "/http//Maureen0007.github.io/Front-end/index.html",
+    "main.fa77c872.css.map": "/http//Maureen0007.github.io/Front-end/static/css/main.fa77c872.css.map",
+    "main.03246e1f.js.map": "/http//Maureen0007.github.io/Front-end/static/js/main.03246e1f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa77c872.css",
+    "static/js/main.03246e1f.js"
+  ]
+}
