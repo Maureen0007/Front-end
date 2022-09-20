@@ -1,13 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import Authors from './Authors';
 
 const URL = "http://localhost:9292/books";
 const fetchBooks = () => fetch(URL).then(res => res.json());
 
 
 function Books() {
-
-  const [active, setActive] = useState([]);
 
   const [books, setBooks] = useState([]);
 
@@ -20,30 +17,26 @@ function Books() {
   return (
     <>
     <h1>books</h1>
+    <section className="bookdata">
     {books.map((book) => {
       const {name, author_id, image} = book
 
       return(
         <>
+        <div className='card'>
+        <h3 className='titlebooks'>{name}</h3>
         <div>
-          <img src={image} alt={name}/>
+          <img className='images' src={image} alt={name}/>
         </div>
         <div>
-          <h3>{name}</h3>
           <p>{author_id}</p>
         </div>
+        </div>
+        
         </>
       )
     })}
-
-    <div>
-    <button onClick={()=> setActive("Authors")}>Authors</button>
-
-    </div>
-    {active === "Authors" && <Authors title="" />}
-    <div>
-
-    </div>
+    </section>
     </>
     
   )
