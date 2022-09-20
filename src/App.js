@@ -11,7 +11,7 @@ function App() {
     <div className='App'>
       <nav className='navbtn'>
         <button className='btn' onClick={()=> setActive("Home")}>Home</button>
-        <button className='btn' onClick={()=> setActive("Books")}>Books</button>
+        <button className='btn1' onClick={()=> setActive("Books")}>Books</button>
       </nav>
       <div>
         {active === "Home" && <Home title="" />}

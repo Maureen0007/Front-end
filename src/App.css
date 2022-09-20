@@ -5,13 +5,14 @@ body{
   margin: 0;
   padding: 0;
   background-color: rgb(27, 19, 19);
+  overflow-x: hidden;
 }
 
 /* home */
 .homeinfo{
   width: 500px;
   height: 500px;
-  background-color: rgb(233, 206, 206);
+  background-color: rgb(138, 169, 253);
   margin-left: 28%;
   padding: 2rem;
   margin-top: 2rem;
@@ -21,17 +22,41 @@ body{
 .hometext{
   line-height: 2.5rem;
 }
+.homename{
+  margin-left: 20%;
+}
+.homeImg{
+  width: 200px;
+  height: 200px;
+  margin-left: 5rem;
+}
 /* navbar  */
 
 .btn{
   width: 20%;
   height: 60px;
-  margin-top: 2rem;
   padding: 2rem;
   border-radius: .75rem;
+  display: inline;
+  margin: 2rem;
+  margin-left: 5%;
 }
+.btn1{
+  width: 20%;
+  height: 60px;
+  padding: 2rem;
+  border-radius: .75rem;
+  display: inline;
+  margin-left: 30%;
+
+}
+
 .card{
   background-color: rgb(138, 169, 253);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 6px white ;
   
 }
 .images{
@@ -41,10 +66,22 @@ body{
 }
 
 .bookdata{
-  background-color: white;
   width: 100vw;
   height: 100vw;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.booktitle{
+  color: white;
+  margin: 5rem;
+  font-size: 3rem;
+}
+
+.icons{
+  margin: 3rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
 }
